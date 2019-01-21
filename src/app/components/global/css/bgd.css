@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+.inner{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.content{
+	max-width: fit-content;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.menu-dev{
+	position: fixed;
+	font-family: 'Do Hyeon';
+	font-size: 20px;
+	color: white;
+	background-color: #000000c9;
+	margin:0px;
+	display: table-caption;
+	height: 60px;
+	width:100%	;
+	z-index: 1;
+}
+
+#btn-menu-check{
+	display: none;
+}
+.menu-dev .order-btn-menu{
+	margin: 10px 0px 0px 10px;
+	cursor: pointer;
+	display: none;
+	vertical-align: middle;
+	color: white;
+}
+
+.menu-dev .order-txt-menu{
+	width: 80%;
+	margin: 0;
+	text-align: right;
+	display: none;
+	vertical-align: -webkit-baseline-middle;
+}
+
+.btn-menu-color{
+	color: white;
+}
+
+.menu-pc{
+	font-family: 'Do Hyeon';
+	font-size: 20px;
+	margin:0px;
+	display: inline-block;
+	width: 98%;
+	text-align: -webkit-right;
+}
+
+.menu-pc:hover{
+	background-color: black;
+}
+
+.menu-pc .menu-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menu-pc .item-menu{
+	margin: 0px;
+	padding:0px 10px 0px 10px;
+	transition: font-size 0.3s;
+	display: inline-flex;
+	text-decoration-line: none;
+	height: 60px;
+
+}
+
+.menu-pc .item-menu:hover{
+	font-size: 25px;
+	background-color: #ffffff09;
+}
+
+.item-menu-name{
+	display: table-cell;
+	align-self: center;
+	color: #c3fed9d6;
+}
+.item-menu-name:hover{
+	color: white;
+
+}
+
+.content .whoami{
+	font-family: 'Do Hyeon', sans-serif;
+	color: #F9F3F4;
+	text-shadow: 0px 0px 80px #000;
+	font-size: 400%;
+	width: max-content;
+	margin: 0px;
+}
+
+
+.social{
+	display: table;
+	margin: 0 auto;
+}
+
+.social .logo{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+	background-color: #ffffff1f;
+	opacity: 20;
+	color: white;
+	border-radius: 2px;
+}
+
+.social .fb:hover{
+	background-color: white;
+	color: #3b5998;
+}
+.social .gh:hover{
+	background-color: white;
+	color: black;
+}
+.social .lk:hover{
+	background-color: white;
+	color: #4875B4;
+}
+.social .wp:hover{
+	background-color: white;
+	color: #25d366;
+}
+.social .yt:hover{
+	background-color: white;
+	color: #FF3333;
+}
+
+.unselected-welcome{
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	display: flex;
+	margin: 15px auto;
+	width: max-content;
+	text-align: center;
+}
+
+#btn-wp{
+	display: none;
+}
+
+#btn-wp:checked ~ .copied-wp{
+	display: flex;
+	position: absolute;
+	z-index: 1;
+}
+
+#btn-wp:checked ~ .selected-wp{
+	display: none;
+}
+
+.selected-wp{
+	color: #25d366;
+	font-family: 'Raleway', sans-serif;
+	display: none;
+	margin: 18px auto;
+	width: max-content;
+	text-align: center;
+}
+
+.copied-wp{
+	color: #25d366;
+	font-family: 'Raleway', sans-serif;
+	display: none;
+	margin: 18px auto;
+	width: max-content;
+	text-align: center;
+}
+
+#select-wp:hover ~ .selected-wp{
+	display: flex;
+}
+
+#select-wp:hover ~ .unselected-welcome{
+	display: none;
+}
+
+.progress{	
+	text-align: center;
+	width: 90%;
+}
+
+.progress-percent{
+	font-weight: bold;
+}
+
+.habilities{
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #000000c9;
+	color: white;
+}
+
+.prueba{
+	color:blue;
+	text-align: center;
+}
+
+
+@media (max-width: 768px){
+
+	.menu-dev{
+		background-color: #000000b3;
+	}
+
+	.menu-pc .menu-cell{
+		transition: margin-left 0.3s;
+	}
+
+	#btn-menu-check:checked ~ .menu-pc .menu-cell{
+		margin-left: 0%;
+		border-radius: 0px 5px 5px 0px;
+	}
+
+	.menu-dev .order-btn-menu{
+		display: inline-block;
+	}
+
+	.menu-dev .order-txt-menu{
+		display: inline-block;
+	}
+
+	.menu-pc{
+		background-color: black;
+	}
+	.menu-pc .menu-cell{
+		position: absolute;
+		width: 90%;
+		background-color: #232323de;
+		margin-left: -90%;
+	}
+	.menu-pc .item-menu{
+		display: flex;
+		border-style: groove;
+		border-bottom: groove;
+		border-right: none;
+		border-left: none;
+		border-width: thin;
+		border-color: #c3bbbb29;
+	}
+
+	.item-menu-name{
+		color: white;
+	}
+	.item-menu-name:hover{
+		color: black;
+	}
+	.social .logo{
+		width: 50px;
+		height: 50px;
+	}
+
+	.welcome{
+		font-size: 100%;
+	}
+
+	.content .whoami{
+		font-size: 150%;
+	}
+
+
+
+}

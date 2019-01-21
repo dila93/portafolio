@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.languages{
+	color: white;
+	padding-top: 10px;
+	padding-left: 10px;
+	display: flex;
+	position: fixed;
+	z-index: 2;
+}
+
+.flag{
+	height: 18px;
+	width: 24px;
+	margin: 5px;
+	margin:;
+}
+.english_flag{
+	background-image: url('../img/en.png');
+	background-size: cover;
+	
+}
+
+.spanish_flag{
+	background-image: url('../img/es.png');
+	background-size: cover;
+}
+
+#english_radio{
+	display: none;
+}
+
+#spanish_radio{
+	display: none;
+}
+
+#english_radio:checked ~ .english_flag{
+	border-color: #551A8B;
+	border-style: none none solid none;	
+}
+
+#spanish_radio:checked ~ .spanish_flag{
+	border-color: #551A8B;
+	border-style: none none solid none;		
+}
+
+#intro{
+	height: 100%;
+	width: 100%;
+}
+
+.header{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background-color: black;
+	background-size: cover;
+	display: table;
+	top: 0;	
+}
+.base{
+	height: 100%;
+	width: 100%;	
+}
+
+.temp .header{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url('../img/sebas4.png') no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	display: table;
+	top: 0;	
+}
+
+@media  (max-width: 768px){
+	.languages{
+		left: 50%;
+		padding-top: 16px;
+	}
+}
+
