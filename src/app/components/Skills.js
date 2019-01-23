@@ -1,6 +1,6 @@
 //Dependencies
 import React, { Component } from "react";
-import {Row} from "react-materialize";
+import {Row, Col, Chip, Tag} from "react-materialize";
 import {Redirect} from 'react-router-dom';
 import Typed from 'react-typed';
 import PropTypes from 'prop-types';
@@ -32,12 +32,14 @@ export default class Main extends Component {
         this.state = {};
     }
 
-    progress_bar(data){        
-        return (      
-            <div className="progress">
-                <p><a style={{color: 'white'}}>{data.language}</a> <a className="progress-percent" style={{color: data.color}}>{data.value}%</a></p>                
-                <Line trailColor='#c3fed9d6' trailWidth="1" percent={data.value} strokeWidth="2" strokeColor={data.color} />
-            </div>       
+    progress_bar(data){
+        console.log("data: ", data);  
+        return (                  
+                <Col s={1} m={1} l={2} xl={3}>
+                    <div>
+                        <a>{data.language}</a>
+                    </div>
+                </Col>                
         )
     }
 
@@ -47,8 +49,10 @@ export default class Main extends Component {
             <div id="skills">
                 <div className="habilities">                
                     <h1> {title} </h1>
-                    {skills && skills.map((item, key) => this.progress_bar(item))}                    
-                </div>                
+                    <Row style={{textAlign: 'center'}}>
+                    {skills && skills.map((item, key) => this.progress_bar(item))}
+                    </Row>                   
+                </div>                    
             </div>
         );
     }

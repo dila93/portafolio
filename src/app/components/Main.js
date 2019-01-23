@@ -1,6 +1,6 @@
 //Dependencies
 import React, { Component } from "react";
-import {Row} from "react-materialize";
+import {Row, Col} from "react-materialize";
 import {Redirect} from 'react-router-dom';
 import Typed from 'react-typed';
 import PropTypes from 'prop-types';

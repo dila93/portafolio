@@ -1,6 +1,6 @@
 //Dependencies
 import React, { Component } from "react";
-import {Row} from "react-materialize";
+import {Row, Col} from "react-materialize";
 import {Redirect} from 'react-router-dom';
 import Typed from 'react-typed';
 import PropTypes from 'prop-types';
@@ -35,8 +35,15 @@ export default class Main extends Component {
         const {skills, title} = this.props;                                  
         return (
             <div id="jobs">
-                <h1>Jobs</h1>
-                <p>hola</p>    
+                <Row>
+                    <Col xs={6} s={6} m={6} l={6}>
+                        <h1>Current personal projects</h1>
+                        <p>Excel</p>
+                    </Col>
+                    <Col xs={6} s={6} m={6} l={6}>
+                        <h1>Expirience</h1>
+                    </Col>
+                </Row>
             </div>
         );
     }

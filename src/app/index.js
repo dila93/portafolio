@@ -151,9 +151,9 @@ export default class App extends React.Component {
                         skills={skills}
                         title={skills_title}
                     />
-                    <Jobs
+                    {/*<Jobs
 
-                    />
+                    />*/}
                 </div>                
             </div>
 
