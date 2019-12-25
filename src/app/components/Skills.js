@@ -33,13 +33,11 @@ export default class Main extends Component {
     }
 
     progress_bar(data){
-        console.log("data: ", data);  
-        return (                  
-                <Col s={1} m={1} l={2} xl={3}>
-                    <div>
-                        <a>{data.language}</a>
-                    </div>
-                </Col>                
+        return (
+            <div className="skill-container">
+                <span className="skill-text">{data.language}</span>
+                <span className="skill-value">{data.value + '%'}</span>
+            </div>            
         )
     }
 
@@ -49,9 +47,9 @@ export default class Main extends Component {
             <div id="skills">
                 <div className="habilities">                
                     <h1> {title} </h1>
-                    <Row style={{textAlign: 'center'}}>
-                    {skills && skills.map((item, key) => this.progress_bar(item))}
-                    </Row>                   
+                    <div className="skills-group">
+                        {skills && skills.map((item, key) => this.progress_bar(item))}
+                    </div>                   
                 </div>                    
             </div>
         );

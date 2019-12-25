@@ -88,37 +88,47 @@ export default class App extends React.Component {
 
     get_skills(){
         skills = [{
-            language: "css",
+            language: "CSS",
             value: "90",
             color: "#088A29"
         },
         {
-            language: "html",
+            language: "Html",
             value: "100",
             color: "#04B431"
         },
         {
-            language: "javascript",
+            language: "Javascript",
             value: "90",
             color: "#01DF3A"
         },
         {
-            language: "node js",
+            language: "Node js",
             value: "80",
             color: "#00FF40"
         },
         {
-            language: "express",
+            language: "Express js",
             value: "85",
             color: "#2EFE64"
         },
         {
-            language: "mongodb",
+            language: "React js",
+            value: "50",
+            color: "#81F79F"
+        },
+        {
+            language: "Mongodb",
             value: "60",
             color: "#58FA82"
         },
         {
-            language: "mysql",
+            language: "Jest js",
+            value: "50",
+            color: "#81F79F"
+        },
+        {
+            language: "Mysql",
             value: "50",
             color: "#81F79F"
         }            

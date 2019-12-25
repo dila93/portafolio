@@ -214,8 +214,34 @@ html, body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #000000c9;
+	background-color: #e61e32;
 	color: white;
+}
+
+.skills-group{
+	text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-text{
+	background-color: #000000ad;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.skill-container{
+	padding: 10px;
+    margin: 5px;
+}
+
+.skill-value{
+	color: #d0d0d0;
+    font-weight: bold;
 }
 
 .prueba{

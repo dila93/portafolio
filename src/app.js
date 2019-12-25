@@ -20,6 +20,6 @@ app.use('/', index);
 // STATIC FILES
 app.use(express.static(path.join(__dirname, 'public')));
 // STARTING THE SERVER
-app.listen(app.get('port'), () => {
+app.listen(config.port, () => {
     console.log("server runing on port ", app.get('port'));
 });
