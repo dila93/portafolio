@@ -295,7 +295,7 @@ html, body{
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	width: 85%;
+	width: 100%;
 	flex-wrap: wrap;
 }
 
