@@ -64,7 +64,7 @@ html, body{
 	font-size: 20px;
 	margin:0px;
 	display: inline-block;
-	width: 98%;
+	width: 100%;
 	text-align: -webkit-right;
 }
 
@@ -73,8 +73,7 @@ html, body{
 }
 
 .menu-pc .menu-cell{
-	display: table-cell;
-	vertical-align: middle;
+	margin: 0 10px 0 10px;
 }
 
 .menu-pc .item-menu{
@@ -95,7 +94,7 @@ html, body{
 .item-menu-name{
 	display: table-cell;
 	align-self: center;
-	color: #c3fed9d6;
+	color: white;
 }
 .item-menu-name:hover{
 	color: white;
@@ -211,18 +210,41 @@ html, body{
 
 .habilities{
 	font-family: 'Raleway', sans-serif;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #e61e32;
-	color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e61e32;
+    color: white;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.title-h1{
+	padding: 20px;
+	text-align: center;
+}
+
+.height-x{
+	height: 700px;
+}
+
+.height-max-content{
+	height: max-content;
+}
+.full-section{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .skills-group{
 	text-align: center;
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 50%;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -240,13 +262,46 @@ html, body{
 }
 
 .skill-value{
-	color: #d0d0d0;
+	color: white;
     font-weight: bold;
 }
 
 .prueba{
 	color:blue;
 	text-align: center;
+}
+
+.img-redonda{
+	margin: 0 40px 40px 40px;
+	width: 300px;
+	height: 300px;
+	border-radius:150px;
+}
+
+.about-me{
+	padding: 40px 0 40px 0;
+	background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.whoami-content{
+	display: flex;
+	padding: 0 40px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+	flex-wrap: wrap;
+}
+
+.whoami-content span{
+	width: 300px;
+    margin: 20px;
 }
 
 

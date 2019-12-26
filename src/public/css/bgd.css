@@ -60,7 +60,6 @@ html, body{
 }
 
 .header{
-	height: 100%;
 	width: 100%;
 	margin: auto;
 	background-color: black;
@@ -83,6 +82,7 @@ html, body{
 	display: table;
 	top: 0;	
 }
+
 
 @media  (max-width: 768px){
 	.languages{

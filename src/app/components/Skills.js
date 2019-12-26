@@ -14,7 +14,7 @@ import './global/css/bgd.css';
 
 var ginfo = "";
 
-export default class Main extends Component {
+export default class Skills extends Component {
     
     componentDidMount() {
         // If you want to pass more options as props, simply add
@@ -32,9 +32,9 @@ export default class Main extends Component {
         this.state = {};
     }
 
-    progress_bar(data){
+    progress_bar(data, key){
         return (
-            <div className="skill-container">
+            <div  key={key} className="skill-container">
                 <span className="skill-text">{data.language}</span>
                 <span className="skill-value">{data.value + '%'}</span>
             </div>            
@@ -44,11 +44,11 @@ export default class Main extends Component {
     render() {
         const {skills, title} = this.props;                                  
         return (
-            <div id="skills">
+            <div id="skills" className="full-section height-x">
                 <div className="habilities">                
-                    <h1> {title} </h1>
+                    <h1 className="title-h1"> {title} </h1>
                     <div className="skills-group">
-                        {skills && skills.map((item, key) => this.progress_bar(item))}
+                        {skills && skills.map((item, key) => this.progress_bar(item, key))}
                     </div>                   
                 </div>                    
             </div>
@@ -56,7 +56,7 @@ export default class Main extends Component {
     }
 }
 
-Main.propTypes = {
+Skills.propTypes = {
     skills: PropTypes.array.isRequired,
     title: PropTypes.string.isRequired
 };

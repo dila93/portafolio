@@ -41,7 +41,7 @@ export default class Main extends Component {
         const {strings, menu, welcome, who} = this.props;        
         return (
 
-            <div className="header">                
+            <div className="header height-x">                
 
                 <div className="menu-dev">
 

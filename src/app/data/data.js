@@ -10,26 +10,23 @@ export default {
 				url: '#skills'
 			},
 			{
-				title: 'Mis trabajos',
-				url: '#jobs'
+				title: '¿Pero, este quién es?',
+				url: '#whoami'
 			},
 			{
 				title: 'Blog',
 				url: '/'
 			},
-			{
-				title: 'Contacto',
-				url: '#contact'
-			}
 		],
 		who: 'Soy',
 		whoami: [
-            'Desarrollador Fullstack',
+            'Desarrollador FullStack',
             'Ingeniero de Sistemas',
             'Sebastian Ardila'
         ],
         welcome: "Bienvenido",
-        skills_title: "Habilidades"
+        skills_title: "Habilidades",
+        whoami_title: "¿Pero, este quién es?"
 	},
 	english: {
 		menu: [
@@ -42,25 +39,22 @@ export default {
 				url: '#skills'
 			},
 			{
-				title: 'My jobs',
-				url: '#jobs'
+				title: '¿But, who is this guy?',
+				url: '#whoami'
 			},
 			{
 				title: 'Blog',
 				url: '/'
 			},
-			{
-				title: 'Contact',
-				url: '#contact'
-			}
 		],
 		who: 'I\'m',
 		whoami: [
-            'Fullstack developer',
+            'FullStack developer',
             'Systems Engineer',
             'Sebastian Ardila'
         ],
         welcome: "Welcome",
-        skills_title: "Skills"
+        skills_title: "Skills",
+        whoami_title: "¿But, who is this guy?"
 	}
 };

@@ -4,6 +4,7 @@ import {render} from 'react-dom';
 // Components
 import Main from './components/Main.js';
 import Skills from './components/Skills.js';
+import Whoami from './components/Whoami.js';
 import Jobs from './components/Jobs.js';
 // import Session from './configuration/session.js';
 
@@ -21,6 +22,8 @@ var strings, menu, welcome, who;
 // Skills variables
 var skills_title;
 var skills;
+// Whoami variables
+var whoami_title;
 // Global variables
 var language;
 export default class App extends React.Component {
@@ -72,7 +75,9 @@ export default class App extends React.Component {
             welcome = data.spanish.welcome;
             who = data.spanish.who;
             //SKILLS
-            skills_title = data.spanish.skills_title
+            skills_title = data.spanish.skills_title;
+            //WHOAMI
+            whoami_title = data.spanish.whoami_title;
 
         }else if(this.state.language == "En"){
             //MAIN
@@ -81,7 +86,9 @@ export default class App extends React.Component {
             welcome = data.english.welcome;
             who = data.english.who;
             //SKILLS
-            skills_title = data.english.skills_title
+            skills_title = data.english.skills_title;
+            //WHOAMI
+            whoami_title = data.english.whoami_title;
             
         }
     }
@@ -160,6 +167,10 @@ export default class App extends React.Component {
                     <Skills
                         skills={skills}
                         title={skills_title}
+                    />
+                    <Whoami
+                        skills={skills}
+                        title={whoami_title}
                     />
                     {/*<Jobs
 
