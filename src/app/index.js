@@ -23,14 +23,15 @@ var strings, menu, welcome, who;
 var skills_title;
 var skills;
 // Whoami variables
-var whoami_title;
+var whoami_title, whoami_language;
 // Global variables
 var language;
 export default class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            language: 'En'
+            language: 'En',
+            backgroundMe: ''
         };
         this.styles = {borderColor: '#551A8B', border: 'solid'};
 
@@ -78,6 +79,7 @@ export default class App extends React.Component {
             skills_title = data.spanish.skills_title;
             //WHOAMI
             whoami_title = data.spanish.whoami_title;
+            whoami_language = 'spanish';
 
         }else if(this.state.language == "En"){
             //MAIN
@@ -89,7 +91,7 @@ export default class App extends React.Component {
             skills_title = data.english.skills_title;
             //WHOAMI
             whoami_title = data.english.whoami_title;
-            
+            whoami_language = 'english';            
         }
     }
 
@@ -169,7 +171,7 @@ export default class App extends React.Component {
                         title={skills_title}
                     />
                     <Whoami
-                        skills={skills}
+                        language={whoami_language}
                         title={whoami_title}
                     />
                     {/*<Jobs

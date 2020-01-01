@@ -1,3 +1,8 @@
+import React, { Component } from "react";
+
+let backgroundMe;
+
+
 export default {
 	spanish: {
 		menu: [
@@ -55,6 +60,6 @@ export default {
         ],
         welcome: "Welcome",
         skills_title: "Skills",
-        whoami_title: "¿But, who is this guy?"
+        whoami_title: "¿But, who is this guy?",
 	}
 };
